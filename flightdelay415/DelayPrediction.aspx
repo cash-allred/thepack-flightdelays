@@ -23,14 +23,10 @@
   <link href="custom.css" rel="stylesheet"/>
 </head>
 <body id="page-top">
-    <form id="form1" runat="server">
-        <div>
-        </div>
-    </form>
     <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">Home</a>
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         Menu
         <i class="fas fa-bars"></i>
@@ -38,10 +34,10 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="nav-link js-scroll-trigger" href="#about">Arrival Predictor</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+            <a class="nav-link js-scroll-trigger" href="#projects">Recommended Airline for Departure</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#signup">Contact</a>
@@ -55,23 +51,56 @@
   <header class="masthead">
     <div class="container d-flex h-100 align-items-center">
       <div class="mx-auto text-center">
-        <h1 class="mx-auto my-0 text-uppercase">Grayscale</h1>
-        <h2 class="text-white-50 mx-auto mt-2 mb-5">A free, responsive, one page Bootstrap theme created by Start Bootstrap.</h2>
+        <h1 class="mx-auto my-0 text-uppercase">Flight Delay Predictor</h1>
+        <h2 class="text-white-50 mx-auto mt-2 mb-5">Plan ahead as you compare layovers, time your arrival for meetings, or optimize your flight home</h2>
         <a href="#about" class="btn btn-primary js-scroll-trigger">Get Started</a>
       </div>
     </div>
   </header>
 
-  <!-- About Section -->
+  <!-- Arrival Recommender Section -->
   <section id="about" class="about-section text-center">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 mx-auto">
-          <h2 class="text-white mb-4">Built with Bootstrap 4</h2>
-          <p class="text-white-50">Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-            <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
+          <h2 class="text-white mb-4">Arrival Prediction</h2>
+          <p class="text-white-50">Our regression model uses thousands of flights to predict how close a flight's arrival time will be to the scheduled arrival.
+              <br /><br />
+              This is information is helpful when evaluating how much time you would like to have at a particular layover, or if you are on a schedule to get to 
+              a meeting.</p>
         </div>
       </div>
+      <form id="form1" runat="server">
+        <div>
+            <asp:DropDownList ID="ddlAirline" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="1">Delta (test)</asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <asp:DropDownList ID="ddlOriginAirport" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="SLC">Salt Lake City (SLC) test</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="ddlDestinationAirport" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="PHX">Phoenix (PHX) test</asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <asp:DropDownList ID="ddlMonth" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="1">January (test)</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="ddlDay" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="1">1 (test)</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="ddlYear" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="2019">2019 (test)</asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <asp:DropDownList ID="ddlDayOfWeek" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="0">Sunday (test)</asp:ListItem>
+            </asp:DropDownList>
+            <asp:DropDownList ID="ddlArrivalTime" runat="server" CssClass="btn btn-primary js-scroll-trigger">
+                <asp:ListItem Value="1400">2:00PM</asp:ListItem>
+            </asp:DropDownList>
+        </div>
+      </form>
       <img src="img/ipad.png" class="img-fluid" alt="">
     </div>
   </section>

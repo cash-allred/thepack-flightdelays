@@ -71,7 +71,6 @@
     <Content Include="core.css" />
     <Content Include="Custom.css" />
     <Content Include="DelayPrediction.aspx" />
-    <Content Include="Home.html" />
     <Content Include="img\bg-masthead.jpg" />
     <Content Include="img\bg-signup.jpg" />
     <Content Include="img\demo-image-01.jpg" />
