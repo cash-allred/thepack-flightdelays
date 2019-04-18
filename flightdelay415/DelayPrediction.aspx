@@ -82,23 +82,51 @@
             </asp:DropDownList>
             <br />
             <asp:DropDownList ID="ddlMonth" runat="server" CssClass="btn btn-primary js-scroll-trigger">
-                <asp:ListItem Value="1">January (test)</asp:ListItem>
+                <asp:ListItem Value="1">January</asp:ListItem>
+                <asp:ListItem Value="2">February</asp:ListItem>
+                <asp:ListItem Value="3">March</asp:ListItem>
+                <asp:ListItem Value="4">April</asp:ListItem>
+                <asp:ListItem Value="5">May</asp:ListItem>
+                <asp:ListItem Value="6">June</asp:ListItem>
+                <asp:ListItem Value="7">July</asp:ListItem>
+                <asp:ListItem Value="8">August</asp:ListItem>
+                <asp:ListItem Value="9">September</asp:ListItem>
+                <asp:ListItem Value="10">October</asp:ListItem>
+                <asp:ListItem Value="11">November</asp:ListItem>
+                <asp:ListItem Value="12">December</asp:ListItem>
             </asp:DropDownList>
             <asp:DropDownList ID="ddlDay" runat="server" CssClass="btn btn-primary js-scroll-trigger">
-                <asp:ListItem Value="1">1 (test)</asp:ListItem>
             </asp:DropDownList>
-            <asp:DropDownList ID="ddlYear" runat="server" CssClass="btn btn-primary js-scroll-trigger">
-                <asp:ListItem Value="2019">2019 (test)</asp:ListItem>
-            </asp:DropDownList>
-            <br />
             <asp:DropDownList ID="ddlDayOfWeek" runat="server" CssClass="btn btn-primary js-scroll-trigger">
-                <asp:ListItem Value="0">Sunday (test)</asp:ListItem>
+                <asp:ListItem Value="1">Sunday</asp:ListItem>
+                <asp:ListItem Value="2">Monday</asp:ListItem>
+                <asp:ListItem Value="3">Tuesday</asp:ListItem>
+                <asp:ListItem Value="4">Wednesday</asp:ListItem>
+                <asp:ListItem Value="5">Thursday</asp:ListItem>
+                <asp:ListItem Value="6">Friday</asp:ListItem>
+                <asp:ListItem Value="7">Saturday</asp:ListItem>
             </asp:DropDownList>
             <asp:DropDownList ID="ddlArrivalTime" runat="server" CssClass="btn btn-primary js-scroll-trigger">
                 <asp:ListItem Value="1400">2:00PM</asp:ListItem>
             </asp:DropDownList>
+            <br />
+            <asp:TextBox ID="tbScheduledDeparture" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="requiredvScheduledDeparture" runat="server" ErrorMessage="Please enter a value" ControlToValidate="tbScheduledDeparture" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ID="rvScheduledDeparture" runat="server" ControlToValidate="tbScheduledDeparture" ErrorMessage="Enter a time in military format (1400)" MaximumValue="2400" MinimumValue="1" Type="integer"></asp:RangeValidator>
+            <br />
+            <asp:TextBox ID="tbScheduledArrival" runat="server"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please enter a value" ControlToValidate="tbScheduledArrival" ForeColor="Red"></asp:RequiredFieldValidator>
+            <asp:RangeValidator ID="rvScheduledArrival" runat="server" ControlToValidate="tbScheduledArrival" ErrorMessage="Enter a time in military format (1400)" MaximumValue="2400" MinimumValue="1" Type="integer"></asp:RangeValidator>     
+            <br />
+            <br />
+            <asp:Button ID="btnPrediction" runat="server" Text="Predict" CssClass="btn btn-primary js-scroll-trigger" OnClick="btnPrediction_Click"/>
         </div>
       </form>
+      <div>
+          <asp:Label ID="lblDeparturePrediction" runat="server" Text=""></asp:Label>
+          <br />
+          <asp:Label ID="lblArrivalPrediction" runat="server" Text=""></asp:Label>
+      </div>
       <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
     </div>
   </section>
@@ -106,11 +134,11 @@
   <!-- Projects Section -->
   <section id="projects" class="projects-section bg-light">
     <div class="container">
-
-      <!-- Featured Project Row -->
+        <!-- Featured Project Row -->
       <div class="row align-items-center no-gutters mb-4 mb-lg-5">
         <div class="col-xl-8 col-lg-7">
-          <img class="img-fluid mb-3 mb-lg-0" src="img/bg-masthead.jpg" alt="">
+          <!--tableau arrival-->
+      <div class='tableauPlaceholder' id='viz1555611820907' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ar&#47;Arrivals_15556117889090&#47;Arrivals&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Arrivals_15556117889090&#47;Arrivals' /><param name='tabs' value='yes' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ar&#47;Arrivals_15556117889090&#47;Arrivals&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1555611820907');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='1000px';vizElement.style.height='850px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
         </div>
         <div class="col-xl-4 col-lg-5">
           <div class="featured-text text-center text-lg-left">
