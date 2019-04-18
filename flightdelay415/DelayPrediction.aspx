@@ -73,11 +73,9 @@
       <form id="form1" runat="server">
         <div>
             <asp:DropDownList ID="ddlAirline" runat="server" CssClass="btn btn-primary js-scroll-trigger">
-                <asp:ListItem Value="1">Delta (test)</asp:ListItem>
             </asp:DropDownList>
             <br />
             <asp:DropDownList ID="ddlOriginAirport" runat="server" CssClass="btn btn-primary js-scroll-trigger">
-                <asp:ListItem Value="SLC">Salt Lake City (SLC) test</asp:ListItem>
             </asp:DropDownList>
             <asp:DropDownList ID="ddlDestinationAirport" runat="server" CssClass="btn btn-primary js-scroll-trigger">
                 <asp:ListItem Value="PHX">Phoenix (PHX) test</asp:ListItem>
@@ -101,7 +99,7 @@
             </asp:DropDownList>
         </div>
       </form>
-      <img src="img/ipad.png" class="img-fluid" alt="">
+      <!--<img src="img/ipad.png" class="img-fluid" alt="">-->
     </div>
   </section>
 
