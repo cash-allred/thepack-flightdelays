@@ -10,150 +10,195 @@
 namespace flightdelay415 {
     
     
-    public partial class DelayPrediction {
+    public partial class Feedback {
         
         /// <summary>
-        /// form1 control.
+        /// form2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form2;
         
         /// <summary>
-        /// ddlAirline control.
+        /// ddlAirlineFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlAirline;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAirlineFB;
         
         /// <summary>
-        /// ddlOriginAirport control.
+        /// ddlOriginAirportFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlOriginAirport;
+        protected global::System.Web.UI.WebControls.DropDownList ddlOriginAirportFB;
         
         /// <summary>
-        /// ddlDestinationAirport control.
+        /// ddlDestinationAirportFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDestinationAirport;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDestinationAirportFB;
         
         /// <summary>
-        /// ddlMonth control.
+        /// ddlMonthFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlMonth;
+        protected global::System.Web.UI.WebControls.DropDownList ddlMonthFB;
         
         /// <summary>
-        /// ddlDay control.
+        /// ddlDayFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDay;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDayFB;
         
         /// <summary>
-        /// ddlDayOfWeek control.
+        /// ddlDayOfWeekFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlDayOfWeek;
+        protected global::System.Web.UI.WebControls.DropDownList ddlDayOfWeekFB;
         
         /// <summary>
-        /// tbScheduledDeparture control.
+        /// tbScheduledDepartureFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbScheduledDeparture;
+        protected global::System.Web.UI.WebControls.TextBox tbScheduledDepartureFB;
         
         /// <summary>
-        /// requiredvScheduledDeparture control.
+        /// requiredvScheduledDepartureFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredvScheduledDeparture;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiredvScheduledDepartureFB;
         
         /// <summary>
-        /// rvScheduledDeparture control.
+        /// rvScheduledDepartureFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvScheduledDeparture;
+        protected global::System.Web.UI.WebControls.RangeValidator rvScheduledDepartureFB;
         
         /// <summary>
-        /// tbScheduledArrival control.
+        /// tbScheduledArrivalFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox tbScheduledArrival;
+        protected global::System.Web.UI.WebControls.TextBox tbScheduledArrivalFB;
         
         /// <summary>
-        /// RequiredFieldValidator2 control.
+        /// RequiredFieldValidator2FB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2FB;
         
         /// <summary>
-        /// rvScheduledArrival control.
+        /// rvScheduledArrivalFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RangeValidator rvScheduledArrival;
+        protected global::System.Web.UI.WebControls.RangeValidator rvScheduledArrivalFB;
         
         /// <summary>
-        /// btnPrediction control.
+        /// tbActualDepartureFB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnPrediction;
+        protected global::System.Web.UI.WebControls.TextBox tbActualDepartureFB;
         
         /// <summary>
-        /// lblDeparturePrediction control.
+        /// RequiredFieldValidator1FB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDeparturePrediction;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1FB;
         
         /// <summary>
-        /// lblArrivalPrediction control.
+        /// RangeValidator1FB control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblArrivalPrediction;
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator1FB;
+        
+        /// <summary>
+        /// tbActualArrivalFB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tbActualArrivalFB;
+        
+        /// <summary>
+        /// RequiredFieldValidator3FB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3FB;
+        
+        /// <summary>
+        /// RangeValidator2FB control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator RangeValidator2FB;
+        
+        /// <summary>
+        /// btnFeedback control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnFeedback;
+        
+        /// <summary>
+        /// lblThanks control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblThanks;
     }
 }

@@ -77,16 +77,24 @@
     <Content Include="core.css" />
     <Content Include="Custom.css" />
     <Content Include="DelayPrediction.aspx" />
+    <Content Include="Feedback.aspx" />
     <Content Include="img\bg-masthead.jpg" />
     <Content Include="img\bg-signup.jpg" />
     <Content Include="img\demo-image-01.jpg" />
     <Content Include="img\demo-image-02.jpg" />
+    <Content Include="img\grayscaleCityNoWing.jpg" />
+    <Content Include="img\grayscalePlaneWing.jpg" />
     <Content Include="img\ipad.png" />
+    <None Include="Properties\PublishProfiles\is415app - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
+    <Content Include="Scripts\bundle.js" />
+    <Content Include="Scripts\grayscale.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.js" />
+    <Content Include="Scripts\jquery-easing.js" />
+    <Content Include="Scripts\jquery.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -96,6 +104,13 @@
     </Compile>
     <Compile Include="DelayPrediction.aspx.designer.cs">
       <DependentUpon>DelayPrediction.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
